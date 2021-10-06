@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G마켓</title>
+    <link rel="stylesheet" href="./app.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <a href="#">
+                <h2>로고</h2>
+            </a>
+            <form action="#" method="GET">
+                <input type="text" name="search">
+                <button>찾기</button>
+            </form>
+            <div>
+                <div><a href="#">ad</a></div>
+                <div><a href="#">사용자</a></div>
+                <div><a href="#">전 페이지</a></div>
+                <div><a href="#">장바구니</a></div>
+            </div>
+        </header>
+        <nav>
+            <div class="nav_a">
+                <button class="Allmenu"><b>전체 카테고리</b></button>
+                <ul>
+                    <li><a href="#">베스트</a></li>
+                    <li><a href="#">슈퍼딜</a></li>
+                    <li><a href="#">쿠폰&출첵</a></li>
+                    <li><a href="#">스마트배송</a></li>
+                    <li><a href="#"><span>스마일배송</span></a></li>
+                    <li><a href="#"><span>스마일클럽 비즈</span></a></li>
+                </ul>
+            </div>
+            <div class="nav_b">
+                <ul>
+                    <li><a href="#">로그인</a></li>
+                    <li>|</li>
+                    <li><a href="#">회원가입</a></li>
+                    <li>|</li>
+                    <li><a href="#">고객센터</a></li>
+                    <li>|</li>
+                    <li><a class="global" onclick="Gon()">Global</a>
+                        <ul class="Gul" style="display: none; background-color: #ddd; position: fixed;">
+                            <li><a href="#">English</a></li>
+                            <li><a href="#">中文</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <footer>
+
+        </footer>
+    </div>
+</body>
+<script src="app.js"></script>
+
+</html>
