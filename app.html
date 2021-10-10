@@ -13,22 +13,39 @@
     <div class="container">
         <header>
             <a href="#">
-                <h2>로고</h2>
+                <img src="./image/image__logo.png" alt="" srcset="">
             </a>
             <form action="#" method="GET">
                 <input type="text" name="search">
-                <button>찾기</button>
+                <a href="#"><img src="./image/image__header-search.png" alt="" srcset=""></a>
             </form>
             <div>
-                <div><a href="#">ad</a></div>
-                <div><a href="#">사용자</a></div>
-                <div><a href="#">전 페이지</a></div>
-                <div><a href="#">장바구니</a></div>
+                <div>
+                    <a href="#"><img src="./image/image_AD.jpg" alt=""></a>
+                </div>
+                <div>
+                    <div>
+                        <a href="#"><img src="./image/image__header-mypage.svg" alt="" srcset=""></a>
+                    </div>
+                    <div>
+                        <a href="#"><img src="./image/image__header-recent.svg" alt="" srcset=""></a>
+                    </div>
+                    <div>
+                        <a href="#"><img src="./image/image__header-cart.svg" alt="" srcset=""></a>
+                    </div>
+                </div>
             </div>
         </header>
         <nav>
             <div class="nav_a">
-                <button class="Allmenu"><b>전체 카테고리</b></button>
+                <button class="Allmenu">
+                    <!-- <div class="btn_container" id="toggle">
+                        <span class="top"></span>
+                        <span class="middle"></span>
+                        <span class="bottom"></span>
+                    </div> -->
+                    <h2>전체 카테고리</h2>
+                </button>
                 <ul>
                     <li><a href="#">베스트</a></li>
                     <li><a href="#">슈퍼딜</a></li>
@@ -55,6 +72,75 @@
                 </ul>
             </div>
         </nav>
+        <div class="slide">
+            <div class="nav_controller">
+                <ul>
+                    <li onmouseover="addshow()">브랜드패션</li>
+                    <li>패션의류, 잡화, 뷰티</li>
+                    <li>유아동</li>
+                    <li>식품, 생필품</li>
+                    <li>홈데코, 문고, 취미, 반려</li>
+                    <li>컴퓨터, 디지털, 가전</li>
+                    <li>스포츠, 건강, 렌탈</li>
+                    <li>자동차, 공구</li>
+                    <li>여행, 도서, 티켓, e쿠폰</li>
+                </ul>
+                <div class="addhidden" style="display: none;">
+                    <!-- li:hover 했을 때 나와야함 -->
+                    <ul>
+                        <li>
+                            <h4>브랜드의류</h4>
+                        </li>
+                        <li><a href="#">브랜드 여성의류</a></li>
+                        <li><a href="#">브랜드 남성의류</a></li>
+                        <li><a href="#">브랜드 진/캐쥬얼</a></li>
+                    </ul>
+
+
+                    <ul>
+                        <li>
+                            <h4>브랜드잡화</h4>
+                        </li>
+                        <li><a href="#">브랜드 신발/가방</a></li>
+                        <li><a href="#">브랜드 쥬얼리/시계</a></li>
+                        <li><a href="#">브랜드 수입명품</a></li>
+                    </ul>
+
+
+                    <ul>
+                        <li>
+                            <h4>스포츠브랜드</h4>
+                        </li>
+                        <li><a href="#">브랜드 아웃도어</a></li>
+                        <li><a href="#">브랜드 스포츠패션</a></li>
+                    </ul>
+
+                    <div>
+                        <img src="./image/image_brandAD.jpg" alt=""><br>
+                        <h3>브랜드 패션 쿠폰북</h3>
+                        <p>매주 업데이트 되는 쿠폰북</p>
+                    </div>
+
+                    <div>
+                        <h3>바로가기 ></h3>
+                        <div>
+                            <a href="#">롯데백화점</a>
+                            <a href="#">신세계백화점</a>
+                            <a href="#">현대백화점</a>
+                            <a href="#">갤러리아백화점</a>
+                            <a href="#">AK플라자</a>
+                            <a href="#">대구백화점</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="slide_view">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
         <footer>
 
         </footer>
