@@ -118,7 +118,53 @@ nav div {
     font-size: 12px;
     background-color: #10af29;
     color: white;
+}
+
+#burger {
+    display: none;
+}
+
+#burger+label {
+    width: 25px;
+    height: 17px;
+    display: inline-block;
+    position: relative;
     cursor: pointer;
+}
+
+#burger+label>div {
+    transition: all .4s;
+    opacity: 1;
+    position: absolute;
+    height: 2px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+#burger+label>div:nth-child(1) {
+    top: 0;
+}
+
+#burger+label>div:nth-child(2) {
+    top: 50%;
+}
+
+#burger+label>div:nth-child(3) {
+    top: 100%;
+}
+
+#burger:checked+label>div:nth-child(1) {
+    top: 50%;
+    transform: rotate(45deg);
+}
+
+#burger:checked+label>div:nth-child(2) {
+    opacity: 0;
+}
+
+#burger:checked+label>div:nth-child(3) {
+    top: 50%;
+    transform: rotate(-45deg);
 }
 
 .nav_a {
@@ -167,6 +213,7 @@ nav>.nav_a>ul {
 }
 
 .slide {
+    position: relative;
     width: 100%;
     height: 400px;
     display: flex;
@@ -174,7 +221,9 @@ nav>.nav_a>ul {
 }
 
 .nav_controller {
+    position: absolute;
     width: 100%;
+    height: 100%;
     display: flex;
 }
 
@@ -280,6 +329,8 @@ nav>.nav_a>ul {
 }
 
 .slide_view {
+    position: absolute;
+    margin-left: 224px;
     width: 976px;
     border-top: 1px solid #e0d8d1;
 }

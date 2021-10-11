@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>G마켓</title>
     <link rel="stylesheet" href="./app.css">
+
 </head>
 
 <body>
@@ -38,14 +39,16 @@
         </header>
         <nav>
             <div class="nav_a">
-                <button class="Allmenu">
-                    <!-- <div class="btn_container" id="toggle">
-                        <span class="top"></span>
-                        <span class="middle"></span>
-                        <span class="bottom"></span>
-                    </div> -->
-                    <h2>전체 카테고리</h2>
-                </button>
+                <div class="Allmenu">
+                    <input type="checkbox" id="burger">
+                    <label for="burger">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </label>
+                    <!-- <h2>전체 카테고리</h2> -->
+                </div>
+
                 <ul>
                     <li><a href="#">베스트</a></li>
                     <li><a href="#">슈퍼딜</a></li>
@@ -64,7 +67,7 @@
                     <li><a href="#">고객센터</a></li>
                     <li>|</li>
                     <li><a class="global" onclick="Gon()">Global</a>
-                        <ul class="Gul" style="display: none; background-color: #ddd; position: fixed;">
+                        <ul class="gul" style="display: none; background-color: #ddd; position: fixed;">
                             <li><a href="#">English</a></li>
                             <li><a href="#">中文</a></li>
                         </ul>
@@ -75,7 +78,7 @@
         <div class="slide">
             <div class="nav_controller">
                 <ul>
-                    <li onmouseover="addshow()">브랜드패션</li>
+                    <li onmouseover="addH()" onmouseout="addS()">브랜드패션</li>
                     <li>패션의류, 잡화, 뷰티</li>
                     <li>유아동</li>
                     <li>식품, 생필품</li>
@@ -85,8 +88,7 @@
                     <li>자동차, 공구</li>
                     <li>여행, 도서, 티켓, e쿠폰</li>
                 </ul>
-                <div class="addhidden" style="display: none;">
-                    <!-- li:hover 했을 때 나와야함 -->
+                <div class="addhidden" onmouseover="addH()" onmouseout="addS()">
                     <ul>
                         <li>
                             <h4>브랜드의류</h4>
@@ -95,8 +97,6 @@
                         <li><a href="#">브랜드 남성의류</a></li>
                         <li><a href="#">브랜드 진/캐쥬얼</a></li>
                     </ul>
-
-
                     <ul>
                         <li>
                             <h4>브랜드잡화</h4>
@@ -105,8 +105,6 @@
                         <li><a href="#">브랜드 쥬얼리/시계</a></li>
                         <li><a href="#">브랜드 수입명품</a></li>
                     </ul>
-
-
                     <ul>
                         <li>
                             <h4>스포츠브랜드</h4>
@@ -114,13 +112,11 @@
                         <li><a href="#">브랜드 아웃도어</a></li>
                         <li><a href="#">브랜드 스포츠패션</a></li>
                     </ul>
-
                     <div>
                         <img src="./image/image_brandAD.jpg" alt=""><br>
                         <h3>브랜드 패션 쿠폰북</h3>
                         <p>매주 업데이트 되는 쿠폰북</p>
                     </div>
-
                     <div>
                         <h3>바로가기 ></h3>
                         <div>
@@ -146,6 +142,7 @@
         </footer>
     </div>
 </body>
+
 <script src="app.js"></script>
 
 </html>
